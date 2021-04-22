@@ -2,6 +2,9 @@ $(document).ready(function() {
     $("input[name=days]").on("change", selectSchedule);
 });
 
+$("p#events").text("Sleep in");
+$("p#times").text("Whenever");
+
 function selectSchedule(event) {
     event.preventDefault();
     let events = "";
