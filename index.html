@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule Displayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="schedule.js"></script>
+</head>
+<body>
+
+// create a fieldset with one radio button for each day of the week
+<fieldset>
+    <legend>Select a Day</legend>
+
+    <input type="radio" name="days" id="days-sunday" checked="checked" data-day="Sunday">
+    <label for="days-sunday">Sunday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-monday" data-day="Monday">
+    <label for="days-monday">Monday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-tuesday" data-day="Tuesday">
+    <label for="days-tuesday">Tuesday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-wednesday" data-day="Wednesday">
+    <label for="days-wednesday">Wednesday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-thursday" data-day="Thursday">
+    <label for="days-thursday">Thursday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-friday" data-day="Friday">
+    <label for="days-friday">Friday</label>
+    <br>
+
+    <input type="radio" name="days" id="days-saturday" data-day="Saturday">
+    <label for="days-saturday">Saturday</label>
+    <br>
+</fieldset>
+<br>
+
+//fieldset to display the appropriate schedule for the selected day
+
+<fieldset>
+    <legend>Schedule</legend>
+
+    <div class="column">
+        <h2>Event</h2>
+        <br>
+        <p id="events"></p>
+    </div>
+
+    <div class="column">
+        <h2>Time</h2>
+        <br>
+        <p id="times"></p>
+    </div>
+</fieldset>
+</body>
+</html>
