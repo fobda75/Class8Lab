@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("form:first").on("submit", selectSchedule);
+    $("input[name=days]").on("change", selectSchedule);
 });
 
 function selectSchedule(event) {
