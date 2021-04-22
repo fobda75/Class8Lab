@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("fieldset:first").on("submit", selectSchedule);
+    $("form:first").on("submit", selectSchedule);
 });
 
 function selectSchedule(event) {
